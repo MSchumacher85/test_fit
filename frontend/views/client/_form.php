@@ -17,7 +17,7 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'FIO')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'sex')->radioList([ '1' => 'Мужчина', '0' => 'Женщина', ], ['prompt' => '']) ?>
+    <?= $form->field($model, 'sex')->radioList([ '1' => 'Мужской', '0' => 'Женский', ], ['prompt' => '']) ?>
 
     <?= $form->field($model, 'date_of_birth')->widget(DatePicker::class, [
         'language' => 'ru',
@@ -35,7 +35,7 @@ use yii\widgets\ActiveForm;
         'data' => Club::getClubList(),
         'value' => $model->clubList,
         'options' => [
-            'placeholder' => 'Выбрать категорию...',
+            'placeholder' => 'Доступные клубы...',
             'multiple' => true,
         ],
 

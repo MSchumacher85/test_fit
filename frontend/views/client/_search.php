@@ -33,7 +33,7 @@ use yii\widgets\ActiveForm;
     ?>
     <?= $form->field($model, 'FIO') ?>
 
-    <?= $form->field($model, 'sex')->radioList([ '1' => 'Мужчина', '0' => 'Женщина', ], ['prompt' => '']) ?>
+    <?= $form->field($model, 'sex')->radioList([ '1' => 'Мужской', '0' => 'Женский', ], ['prompt' => '']) ?>
 
 
 
@@ -51,8 +51,8 @@ use yii\widgets\ActiveForm;
     <?php // echo $form->field($model, 'deleted_by_whom') ?>
 
     <div class="form-group">
-        <?= Html::submitButton('Search', ['class' => 'btn btn-primary']) ?>
-        <?= Html::resetButton('Reset', ['class' => 'btn btn-outline-secondary']) ?>
+        <?= Html::submitButton('Найти', ['class' => 'btn btn-primary']) ?>
+        <?= Html::resetButton('Очистить', ['class' => 'btn btn-outline-secondary']) ?>
     </div>
 
     <?php ActiveForm::end(); ?>
